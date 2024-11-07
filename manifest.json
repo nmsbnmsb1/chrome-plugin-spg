@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "密码生成器",
+    "version": "1.0",
+    "description": "生成安全的随机密码",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "clipboardWrite",
+        "storage",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "/styles/utilities.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

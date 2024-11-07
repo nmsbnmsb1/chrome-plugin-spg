@@ -1,0 +1,11 @@
+{
+	"name": "spg",
+	"version": "1.0",
+	"scripts": {
+		"build-base-css": "npx tailwindcss -i ./styles/base_tw.css -o ./styles/base.css",
+		"build-utilities-css": "npx tailwindcss -i ./styles/utilities_tw.css -o ./styles/utilities.css"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.4.14"
+	}
+}

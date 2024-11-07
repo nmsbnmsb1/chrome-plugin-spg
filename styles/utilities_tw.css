@@ -1,0 +1,2 @@
+/* npx tailwindcss -i ./styles/utilities_tw.css -o ./styles/utilities.css */
+@tailwind utilities;
